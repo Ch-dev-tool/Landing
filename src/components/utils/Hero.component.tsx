@@ -39,7 +39,7 @@ export default function Hero() {
                     </div>
                     <div className="relative h-[400px] sm:h-[500px] rounded-lg overflow-hidden shadow-xl">
                         <img
-                            src="src\assets\roodmap.jpg"
+                            src="/assets/roodmap.jpg"
                             alt="Ch_Dev_tool in action"
                             className="rounded-lg bg-cover text-[#120122]"
                             width={500}
