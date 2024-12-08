@@ -4,7 +4,7 @@ import { ArrowRight, Zap, Shield, Smile } from 'lucide-react'
 
 export default function Hero() {
     return (
-        <section className="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20">
+        <section className="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20 h-[800px]">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">
@@ -42,8 +42,6 @@ export default function Hero() {
                             src="/assets/roodmap.jpg"
                             alt="Ch_Dev_tool in action"
                             className="rounded-lg bg-cover text-[#120122]"
-                            width={500}
-                            height={400}
                         />
                     </div>
                 </div>
