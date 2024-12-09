@@ -1,6 +1,8 @@
 
 import { Button } from "../ui/button"
 import { ArrowRight, Zap, Shield, Smile } from 'lucide-react'
+import { StartupName } from "../../shared/protoData"
+
 
 export default function Hero() {
     return (
@@ -12,7 +14,7 @@ export default function Hero() {
                             Revolutionize Your Development Workflow
                         </h1>
                         <p className="text-xl text-gray-300">
-                            Ch_Dev_tool empowers developers to build faster, smarter, and more efficiently.
+                            {StartupName} empowers developers to build faster, smarter, and more efficiently.
                             Experience the future of coding with our AI-powered assistant.
                         </p>
                         <div className="flex space-x-4">
