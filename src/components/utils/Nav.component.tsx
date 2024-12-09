@@ -4,14 +4,8 @@ import { useState } from 'react'
 
 import { motion } from 'framer-motion'
 import { Code } from 'lucide-react'
-
-const navItems = [
-    { name: 'Home', href: '/' },
-    { name: "About", href: "/#AboutSection" },
-    { name: 'Features', href: '/features' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Contact', href: '/contact' },
-]
+import navItems from "../../shared/links";
+import { StartupName } from '../../shared/protoData';
 
 export default function Navbar() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -21,7 +15,7 @@ export default function Navbar() {
             <div className="container mx-auto flex justify-between items-center">
                 <a href="/" className="flex items-center space-x-2 text-xl font-bold">
                     <Code size={24} />
-                    <span>Ch_Dev_tool</span>
+                    <span>{StartupName}</span>
                 </a>
                 <ul className="flex space-x-6">
                     {navItems.map((item, index) => (
