@@ -1,28 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
-import { Code, Cpu, Users, Globe } from 'lucide-react'
+// import { Code, Cpu, Users, Globe } from 'lucide-react'
+import { StartupName } from "../../shared/protoData"
 
-const features = [
-    {
-        icon: Code,
-        title: "Advanced Coding Assistant",
-        description: "AI-powered code completion and refactoring suggestions to boost your productivity."
-    },
-    {
-        icon: Cpu,
-        title: "Intelligent Debugging",
-        description: "Smart error detection and debugging recommendations to solve issues faster."
-    },
-    {
-        icon: Users,
-        title: "Collaborative Development",
-        description: "Seamless team collaboration features for efficient project management."
-    },
-    {
-        icon: Globe,
-        title: "Cross-Platform Support",
-        description: "Works across multiple IDEs and supports various programming languages."
-    }
-]
+import features from "../../shared/features"
 
 export default function About() {
     return (
@@ -31,7 +11,7 @@ export default function About() {
                 <div className="text-center mb-16">
                     <h2 className="tracking-tight
                     text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight
-                    ">About Ch_Dev_tool</h2>
+                    ">About {StartupName}</h2>
                     <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                         Empowering developers with cutting-edge AI technology to streamline workflows and boost productivity.
                     </p>
@@ -69,14 +49,14 @@ export default function About() {
                                 <p className="text-gray-600 mb-4">
                                     With over a decade of experience in software development ,
                                     Diouri Salah Eddine  founded <span
-                                        className="text-blue-600 font-semibold ">Ch_Dev_tool</span> to revolutionize the way developers work. His vision
+                                        className="text-blue-600 font-semibold ">{StartupName}</span> to revolutionize the way developers work. His vision
                                     is to create tools that not only increase productivity but also enhance the
                                     creativity and problem-solving abilities of developers worldwide.
                                 </p>
                                 <p className="text-gray-600">
                                     "I believe that by harnessing the power of softwares and AI, we can unlock new levels of
                                     efficiency and innovation in software development. <span
-                                        className="text-blue-600 font-semibold ">Ch_Dev_tool</span> is just the
+                                        className="text-blue-600 font-semibold ">{StartupName}</span> is just the
                                     beginning of this exciting journey."
                                 </p>
                             </div>
