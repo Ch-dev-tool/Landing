@@ -14,7 +14,7 @@ export default function Navbar() {
         <nav className="bg-gray-900 text-white p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <a href="/" className="flex items-center space-x-2 text-xl font-bold">
-                    <Code size={24} />
+                    <Code size={24} className='text-[#fca700]' />
                     <span>{StartupName}</span>
                 </a>
                 <ul className="flex space-x-6">
@@ -30,7 +30,7 @@ export default function Navbar() {
                                 </motion.span>
                                 {hoveredIndex === index && (
                                     <motion.div
-                                        className="absolute inset-0 bg-blue-500 rounded-md z-0"
+                                        className="absolute inset-0 bg-[#fca700] rounded-md z-0"
                                         layoutId="hoverBackground"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 0.8 }}
