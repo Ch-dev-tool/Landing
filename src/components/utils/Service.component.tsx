@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs"
-import { Code, Cpu, Users, Globe, Rocket, Zap, PenToolIcon as Tool, CheckCircle } from 'lucide-react'
+import { Code, Cpu, Users, Globe,, PenToolIcon as Tool, CheckCircle } from 'lucide-react'
 
 const services = [
     {
