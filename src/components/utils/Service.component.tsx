@@ -1,78 +1,35 @@
+import { StartupName } from "../../shared/protoData";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs"
-import { Code, Cpu, Users, Globe, PenToolIcon as CheckCircle } from 'lucide-react'
+import { PenToolIcon as CheckCircle } from 'lucide-react'
+import { services } from "../../shared/services";
 
-const services = [
-    {
-        icon: Code,
-        title: "Custom Software Development",
-        description: "Tailored software solutions to meet your specific business needs.",
-        workflow: [
-            "Requirements gathering and analysis",
-            "Design and architecture planning",
-            "Agile development process",
-            "Rigorous testing and quality assurance",
-            "Deployment and ongoing support"
-        ]
-    },
-    {
-        icon: Cpu,
-        title: "AI Integration",
-        description: "Incorporate cutting-edge AI technologies into your existing systems.",
-        workflow: [
-            "AI readiness assessment",
-            "Data preparation and model selection",
-            "AI model development and training",
-            "Integration with existing systems",
-            "Performance monitoring and optimization"
-        ]
-    },
-    {
-        icon: Users,
-        title: "Team Augmentation",
-        description: "Boost your development capacity with our skilled professionals.",
-        workflow: [
-            "Skill gap analysis",
-            "Candidate selection and onboarding",
-            "Seamless integration with your team",
-            "Regular progress reporting",
-            "Knowledge transfer and documentation"
-        ]
-    },
-    {
-        icon: Globe,
-        title: "Cloud Migration",
-        description: "Seamlessly move your applications and data to the cloud.",
-        workflow: [
-            "Cloud readiness assessment",
-            "Migration strategy development",
-            "Data migration and application refactoring",
-            "Testing in cloud environment",
-            "Go-live and post-migration support"
-        ]
-    }
-]
 
 export default function ServiceGallery() {
     return (
-        <section className="py-20 bg-white">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <section className="py-20  bg-[#1e2836] text-white h-[820px]" id="ServiceSection">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
+                <div className="text-center">
+                    <h2 className="tracking-tight mb-12
+                    text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+                        <span className="text-[#fca700]">{StartupName}</span> Services</h2>
+                </div>
+
                 <Tabs defaultValue={services[0].title} className="w-full">
-                    <TabsList className="grid w-full grid-cols-2 md:grid-cols-4">
+                    <TabsList className="grid w-full grid-cols-2 md:grid-cols-4  bg-[#2d3748] text-gray-100">
                         {services.map((service) => (
                             <TabsTrigger key={service.title} value={service.title} className="text-sm md:text-base">
-                                <service.icon className="h-5 w-5 mr-2" />
+                                <service.icon className="h-5 w-5 mr-2 text-[#fca700]" />
                                 {service.title}
                             </TabsTrigger>
                         ))}
                     </TabsList>
                     {services.map((service) => (
-                        <TabsContent key={service.title} value={service.title}>
-                            <Card>
+                        <TabsContent key={service.title} value={service.title} className=" bg-[#2d3748]">
+                            <Card className=" bg-[#2d3748] text-gray-50 border-none mt-2">
                                 <CardHeader>
                                     <CardTitle className="flex items-center">
-                                        <service.icon className="h-6 w-6 mr-2 text-blue-500" />
+                                        <service.icon className="h-6 w-6 mr-2 text-[#fca700]" />
                                         {service.title}
                                     </CardTitle>
                                     <CardDescription>{service.description}</CardDescription>
@@ -82,11 +39,11 @@ export default function ServiceGallery() {
                                     <ol className="space-y-4">
                                         {service.workflow.map((step, index) => (
                                             <li key={index} className="flex items-start">
-                                                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                                                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-[#1e2836] rounded-full mr-3">
                                                     {index === service.workflow.length - 1 ? (
-                                                        <CheckCircle className="h-5 w-5 text-blue-600" />
+                                                        <CheckCircle className="h-5 w-5 text-[#fca700]" />
                                                     ) : (
-                                                        <span className="text-blue-600 font-semibold">{index + 1}</span>
+                                                        <span className="text-[#fca700] font-semibold">{index + 1}</span>
                                                     )}
                                                 </span>
                                                 <span>{step}</span>
