@@ -33,7 +33,7 @@ export default function Hero() {
                                 { icon: Smile, text: "Loved by 10k+ Developers" },
                             ].map((item, index) => (
                                 <div key={index} className="flex items-center space-x-2">
-                                    <item.icon className="h-6 w-6 text-blue-400" />
+                                    <item.icon className="h-6 w-6 text-[#fca700]" />
                                     <span className="text-sm">{item.text}</span>
                                 </div>
                             ))}
