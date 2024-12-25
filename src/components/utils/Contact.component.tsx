@@ -60,16 +60,16 @@ export default function Contact() {
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
                 <Mail className="h-6 w-6 text-[#fca700]" />
-                <span>contact@chdevtool.com</span>
+                <span>SalahEddine1914@outlook.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="h-6 w-6 text-[#fca700]" />
-                <span>+1 (555) 123-4567</span>
+                <span>(+212) 682-956759 </span>
               </div>
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <MapPin className="h-6 w-6 text-[#fca700]" />
                 <span>123 Tech Street, San Francisco, CA 94105</span>
-              </div>
+              </div> */}
             </CardContent>
           </Card>
         </div>
