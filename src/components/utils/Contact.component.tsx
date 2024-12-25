@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
