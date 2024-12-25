@@ -82,7 +82,7 @@ const projects = [
 
 export default function ProjectsGallery () {
   return (
-    <section className='py-20 bg-[#1e2836] text-white h-[820px]'>
+    <section className='py-20 bg-[#1e2836] text-white'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center'>
             <h2
