@@ -8,7 +8,7 @@ import Footer from "../components/utils/Footer.component";
 
 function HomePage() {
     return (
-        <main>
+        <main className="w-full">
             <Navbar />
             <Hero />
             <About />
