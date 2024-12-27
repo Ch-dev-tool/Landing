@@ -11,7 +11,8 @@ export default function Hero() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
-                            Revolutionize Your Development Workflow
+                            <span className="text-[#fca700]">R</span>evolutionize Your <span className="text-[#fca700]">D</span>evelopment 
+                            Workflow
                         </h1>
                         <p className="text-xl text-gray-300">
                             {StartupName} empowers developers to build faster, smarter, and more efficiently.
