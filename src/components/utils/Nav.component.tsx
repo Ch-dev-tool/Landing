@@ -10,7 +10,7 @@ import navItems  from '../../shared/links'
 
 export default function Navbar() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const [isMobile, setIsMobile] = useState(false)
+  const [_, setIsMobile] = useState(false)
 
   useEffect(() => {
     const checkIfMobile = () => setIsMobile(window.innerWidth < 768)
